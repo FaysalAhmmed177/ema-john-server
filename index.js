@@ -66,4 +66,4 @@ client.connect(err => {
 app.get('/', (req, res) => {
     res.send('hello amazon');
 })
-app.listen(port);
+app.listen(process.env.PORT || port);
